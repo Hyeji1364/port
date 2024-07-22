@@ -1,0 +1,288 @@
+#section1 {
+  background-color: #fcd8da;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu p {
+  font-size: 2.5rem;
+  cursor: pointer;
+  font-family: var(--fontB);
+  margin: 0;
+}
+
+.circle {
+  fill: #ed412d;
+}
+
+.pentahedron {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  fill: #3e82f7;
+}
+
+.rhombus {
+  fill: #2da94f;
+  stroke: #2da94f;
+}
+
+.x {
+  fill: #fdbd00;
+}
+
+.bg1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.bg svg {
+  display: block;
+  width: 360px;
+  height: 360px;
+  position: absolute;
+  transform: translateZ(0px);
+}
+
+#section1 .sun {
+  position: absolute;
+  z-index: 1000;
+  left: 50%;
+  top: 50%; /* 가운데 정렬을 위해 top 속성 사용 */
+  transform: translate(-50%, -50%); /* 가운데 정렬을 위해 translate 사용 */
+  width: 70%;
+}
+
+#section1 .sun img {
+  width: 100%;
+  height: auto;
+}
+
+#section1 .sun .glass {
+  display: none;
+}
+
+#section1 .sun .noon {
+  animation: no 2s infinite ease;
+}
+
+@keyframes no {
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+#section1 .bar {
+  width: 100%;
+  height: 80px;
+  background-color: #37bff3;
+  position: absolute;
+  z-index: 1000;
+  left: 0;
+  bottom: 0;
+  border-top: 4px solid #000;
+  border-bottom: 4px solid #000;
+}
+
+#section1 .title {
+  font-size: 12vw;
+  padding-bottom: 30vh;
+  font-family: "ShineBubbleDeco";
+  text-transform: uppercase;
+  z-index: 1000;
+  color: #ff5353;
+}
+
+#section2 {
+  background-color: #fcd8da;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.c-container {
+  padding: 2rem;
+}
+
+.c-intro {
+  padding: 30px 0;
+}
+
+.c-intro-lg {
+  display: block;
+}
+
+.c-intro-sm {
+  display: none;
+}
+
+.c-intro_line {
+  display: flex;
+  align-items: stretch; /* 모든 아이템이 동일한 높이를 가지도록 설정 */
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.c-intro_line_item {
+  font-family: var(--fontB);
+  font-size: 14vw;
+  padding: 0.5rem;
+  line-height: 0.9;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 22vh;
+  letter-spacing: -0.02em; /* 글자 간격을 좁게 설정 */
+}
+
+.c-intro_line_item.-pattern {
+  background-color: var(--blue);
+  background-image: url(../../assets/img/pattern.webp);
+  background-position: 50%;
+  background-repeat: repeat;
+  background-size: 100px 100px;
+  border: 3px solid var(--black);
+  flex-grow: 1;
+  height: 20vh; /* 패턴의 높이 */
+}
+
+.c-intro_line_item.-flower-pink {
+  background-image: url(../../assets/img/pink_flower.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 150px;
+  height: 150px;
+}
+
+.c-intro_line_item.-flower-blue {
+  background-image: url(../../assets/img/blue_flower.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 150px;
+  height: 150px;
+}
+
+.c-intro_line_item.-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.c-intro_line_item.-image img {
+  max-width: 100px;
+  height: auto;
+}
+
+.bar-pattern {
+  background-color: var(--blue);
+  background-image: url(../../assets/img/pattern.webp);
+  background-position: 50%;
+  background-repeat: repeat;
+  background-size: 100px 100px;
+  border: 3px solid var(--black);
+  flex-grow: 1;
+  border-radius: 5px;
+  height: 4vh; /* 패턴의 높이 */
+}
+
+.bg2 {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+#section3 {
+  background-color: #fcd8da;
+  width: 100%;
+  height: 200vh;
+  position: relative;
+}
+
+#section3 p {
+  font-family: var(--fontS);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 2;
+  font-size: 20px;
+  margin-bottom: 50vh;
+}
+
+#section3 .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -40vh; /* 이미지를 위로 이동 */
+}
+
+#section3 img {
+  width: 500px;
+  height: 500px;
+}
+
+@media (max-width: 1399px) {
+  .c-intro_line_item.-pattern {
+    margin: 0.07em var(--unit-small) 0.105em;
+  }
+}
+@media (min-width: 1024px) {
+  .c-intro-lg {
+    display: block;
+  }
+  .c-intro-sm {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .c-intro-lg {
+    display: none;
+  }
+  .c-intro-sm {
+    display: block;
+  }
+  .tw-justify-between {
+    justify-content: space-between;
+  }
+
+  .c-intro_line_item {
+    font-size: 5rem; /* 모바일 화면에서 폰트 크기 조정 */
+    height: 10vh; /* 모바일 화면에서 높이 조정 */
+  }
+
+  .c-intro_line_item.-pattern {
+    height: 10vh; /* 모바일 화면에서 패턴의 높이 조정 */
+  }
+
+  #section1 .sun {
+    top: 50%; /* 모바일 화면에서 가운데 정렬 */
+    transform: translate(-50%, -50%);
+    width: 50%; /* 모바일 화면에서 크기 조정 */
+  }
+}
