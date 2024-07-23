@@ -229,7 +229,7 @@
   text-align: center;
   line-height: 2;
   font-size: 20px;
-  margin-bottom: 20vh;
+  margin-bottom: 30vh;
 }
 
 #section3 .img-container {
@@ -262,6 +262,13 @@
   height: auto;
 }
 
+#section3 .smile-pink {
+  margin-left: 3vw;
+  margin-bottom: 150px;
+  width: 35px;
+  height: auto;
+}
+
 .icon-container_left {
   display: flex;
   justify-content: center; /* 가운데 정렬 */
@@ -290,6 +297,14 @@
 #section3 .photo-icon {
   width: 200px;
   height: auto;
+}
+
+#section3 .smile-blue {
+  margin-left: 3vw;
+  margin-bottom: -700px;
+  width: 50px;
+  height: auto;
+  transform: rotate(10deg);
 }
 
 .icon-container_right {
